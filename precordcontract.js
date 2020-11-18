@@ -75,7 +75,8 @@ class Precordcontract extends Contract {
         //  Resulting transaction ID (dashTx) is used to create an PRecord given in the following code
 
 
-
+        let fee=10000
+        let ammount=10000
 
         let precord = PRecord.createInstance(username, name, dob, gender, blood_type, dashTx);
         await ctx.PRecordList.addPRecord(precord);
